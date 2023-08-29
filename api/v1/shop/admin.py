@@ -45,6 +45,11 @@ class MemberAdmin(admin.ModelAdmin):
 class ProductAdmin(admin.ModelAdmin):
     list_display = ("id","name", "category_id", "description", "price", "qty")
 
+@admin.register(Result)
+class ResultAdmin(admin.ModelAdmin):
+    list_display = ("id","product_id", "description")
+
+
 
 
 
